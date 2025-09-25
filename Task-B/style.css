@@ -9,11 +9,11 @@ body, h1, p {
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 /* Body styles */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #279eb9;
+  background-color: #84707f; 
   padding: 32px 16px;
   line-height: 1.7;
   color: #222222;
