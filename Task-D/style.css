@@ -1,0 +1,105 @@
+/*
+Author: Rex Odomero Oghenerobo
+Date: Sunday, 28 September 2025.
+*/
+
+/* Element selectors */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #9d9cbc;
+  color: #333;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* ID selector */
+#special-message {
+  color: darkred;
+  font-weight: bold;
+  background-color: #ffe4e1;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Class selectors */
+.intro-text {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.box {
+  border: 2px solid #2e8b57;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f0f8f5;
+}
+
+.highlight {
+  background-color: #fff3e6;
+  padding: 12px;
+  border-left: 4px solid #ff6600;
+  border-radius: 4px;
+}
+
+/* Group selectors */
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+/* Descendant selectors */
+section ul li {
+  color: rgb(79, 84, 3);
+  font-style: italic;
+}
+
+/* Attribute selectors */
+a[target="_blank"] {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a[target="_blank"]:hover {
+  text-decoration: underline;
+  color: #0c47b7;
+}
+
+img[alt] {
+  border: 2px solid #888;
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+/* Buttons for JavaScript interactions */
+.controls button {
+  background-color: #2e8b57;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #246b45;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .controls button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
