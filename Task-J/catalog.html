@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoRide Catalog | Rent Smarter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-20">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-green-600">EcoRide</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="index.html" class="hover:text-green-600">Home</a>
+        <a href="#catalog" class="hover:text-green-600">Catalog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mt-20">
+
+    <!-- INTRO -->
+    <section class="text-center py-12 px-6">
+      <h2 class="text-3xl font-bold mb-4">Our Rental Catalog</h2>
+      <p class="text-lg text-gray-600">Explore our range of modern e‑bikes available for daily and weekly rentals.</p>
+    </section>
+
+    <!-- PRODUCT GRID -->
+    <section id="catalog" class="max-w-6xl mx-auto px-6 py-12">
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Product 1 -->
+        <div class="bg-white rounded-lg shadow p-4 text-center">
+          <img src="image.png/primeebike-header2.png" alt="Prime City E-Bike" class="w-full h-48 object-cover rounded mb-4" loading="lazy">
+          <h3 class="text-xl font-semibold">Prime City E‑Bike</h3>
+          <p class="text-gray-600">Stylish and efficient for everyday commuting in Tampere.</p>
+          <p class="font-bold text-green-700 mt-2">39 €/d · 199 €/wk</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white rounded-lg shadow p-4 text-center">
+          <img src="image.png/primeebike-header2.png" alt="Mountain E-Bike" class="w-full h-48 object-cover rounded mb-4" loading="lazy">
+          <h3 class="text-xl font-semibold">Mountain E‑Bike</h3>
+          <p class="text-gray-600">Built for trails and hills with extra power assist.</p>
+          <p class="font-bold text-green-700 mt-2">49 €/d · 249 €/wk</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-white rounded-lg shadow p-4 text-center">
+          <img src="image.png/primeebike-header2.png" alt="Cargo E-Bike" class="w-full h-48 object-cover rounded mb-4" loading="lazy">
+          <h3 class="text-xl font-semibold">Cargo E‑Bike</h3>
+          <p class="text-gray-600">Spacious design for families or deliveries.</p>
+          <p class="font-bold text-green-700 mt-2">59 €/d · 299 €/wk</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="bg-white rounded-lg shadow p-4 text-center">
+          <img src="image.png/primeebike-header2.png" alt="Folding E-Bike" class="w-full h-48 object-cover rounded mb-4" loading="lazy">
+          <h3 class="text-xl font-semibold">Folding E‑Bike</h3>
+          <p class="text-gray-600">Compact and portable for easy storage.</p>
+          <p class="font-bold text-green-700 mt-2">35 €/d · 179 €/wk</p>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="bg-white rounded-lg shadow p-4 text-center">
+          <img src="image.png/primeebike-header2.png" alt="Touring E-Bike" class="w-full h-48 object-cover rounded mb-4" loading="lazy">
+          <h3 class="text-xl font-semibold">Touring E‑Bike</h3>
+          <p class="text-gray-600">Long-range battery for weekend adventures.</p>
+          <p class="font-bold text-green-700 mt-2">55 €/d · 279 €/wk</p>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="bg-white rounded-lg shadow p-4 text-center">
+          <img src="image.png/primeebike-header2.png" alt="Sport E-Bike" class="w-full h-48 object-cover rounded mb-4" loading="lazy">
+          <h3 class="text-xl font-semibold">Sport E‑Bike</h3>
+          <p class="text-gray-600">High-performance design for speed and agility.</p>
+          <p class="font-bold text-green-700 mt-2">69 €/d · 349 €/wk</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section class="max-w-4xl mx-auto px-6 py-12 text-center">
+      <h2 class="text-2xl font-bold mb-6">Watch How EcoRide Works</h2>
+      <figure class="aspect-video rounded-lg shadow overflow-hidden">
+        <video controls preload="metadata" poster="image.png/primeebike-header2.png" class="w-full h-full object-cover">
+          <source src="vid.mp4/12766776_3840_2160_60fps.mp4" type="video/mp4">
+          Sorry, your browser doesn’t support embedded videos.
+        </video>
+      </figure>
+      <figcaption class="mt-2 text-sm text-gray-600">A quick tour of EcoRide rentals and safety tips.</figcaption>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4 text-center md:text-left">
+      <div>
+        <h3 class="text-xl font-bold mb-2 text-white">EcoRide</h3>
+        <p>Empowering greener journeys through smarter bike rentals.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2 text-white">Quick Links</h4>
+        <ul class="space-y-1">
+          <li><a href="index.html" class="hover:text-green-500">Home</a></li>
+          <li><a href="#catalog" class="hover:text-green-500">Catalog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2 text-white">Contact</h4>
+        <p>Email: support@ecoride.com</p>
+        <p>Phone: +358 123 456 789</p>
+      </div>
+    </div>
+    <p class="text-center text-sm mt-10">&copy; 2025 EcoRide. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
