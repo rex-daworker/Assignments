@@ -1,0 +1,88 @@
+  <!-- 
+Author: Rex Odomero Oghenerobo
+Date: Monday, 13 November 2025.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task H – Tailwind Registration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="form.js"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans">
+  <header class="bg-blue-900 text-white py-4 text-center">
+    <h1 class="text-xl font-bold">Participant Registration</h1>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6 space-y-6">
+    <!-- Info + Form -->
+    <div class="grid md:grid-cols-3 gap-6">
+      <section class="bg-white p-4 rounded shadow border">
+        <h2 class="font-semibold mb-2">Information</h2>
+        <p>Name: Rex Odomero Oghenerobo</p>
+        <p>Group: AITS23P</p>
+      </section>
+
+      <section class="md:col-span-2 bg-white p-6 rounded shadow border">
+        <h2 class="font-semibold mb-4">Add New Participant</h2>
+        <form id="registrationForm" class="space-y-4" novalidate>
+          <input type="hidden" id="timestamp" name="timestamp">
+
+          <div>
+            <label for="fullName">Full Name</label>
+            <input id="fullName" type="text" class="w-full border rounded p-2">
+            <p id="errName" class="text-red-600 text-sm"></p>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" class="w-full border rounded p-2">
+            <p id="errEmail" class="text-red-600 text-sm"></p>
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" class="w-full border rounded p-2">
+            <p id="errPhone" class="text-red-600 text-sm"></p>
+          </div>
+
+          <div>
+            <label for="birth">Birth Date</label>
+            <input id="birth" type="date" class="w-full border rounded p-2">
+            <p id="errBirth" class="text-red-600 text-sm"></p>
+          </div>
+
+          <div>
+            <label><input id="terms" type="checkbox" class="mr-2"> Accept terms</label>
+            <p id="errTerms" class="text-red-600 text-sm"></p>
+          </div>
+
+          <div class="flex gap-4">
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+            <button type="reset" class="bg-gray-200 px-4 py-2 rounded">Clear</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white p-4 rounded shadow border overflow-x-auto">
+      <table class="w-full border-collapse">
+        <thead class="bg-blue-900 text-white">
+          <tr>
+            <th class="p-2 text-left">Timestamp</th>
+            <th class="p-2 text-left">Name</th>
+            <th class="p-2 text-left">Email</th>
+            <th class="p-2 text-left">Phone</th>
+            <th class="p-2 text-left">Birth</th>
+            <th class="p-2 text-left">Terms</th>
+          </tr>
+        </thead>
+        <tbody id="dataTable"></tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

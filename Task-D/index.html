@@ -1,0 +1,104 @@
+<!--
+Author: Rex Odomero Oghenerobo
+Date: Sunday, 28 September 2025.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task D - Practicing CSS Selectors</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JavaScript functions for interactive color change -->
+  <script>
+    function changeHeadingColor() {
+      const heading = document.querySelector('h1');
+      if (heading) {
+        heading.style.color = 'green';
+      }
+    }
+
+    function resetHeadingColor() {
+      const heading = document.querySelector('h1');
+      if (heading) {
+        heading.style.color = '';
+      }
+    }
+
+    function toggleParagraphColor() {
+      const para = document.getElementById('special-message');
+      if (para) {
+        para.style.color = (para.style.color === 'green') ? '' : 'green';
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Main heading (h1 required) -->
+  <h1>Life in Finland</h1>
+
+  <!-- Paragraph with unique ID -->
+  <p id="special-message">
+    This paragraph uses an <strong>ID selector</strong>.  
+    It also responds to a button that toggles its text color.
+  </p>
+
+  <!-- Buttons to control heading and paragraph color -->
+  <div class="controls">
+    <button onclick="changeHeadingColor()">Change H1 Color</button>
+    <button onclick="resetHeadingColor()">Reset H1 Color</button>
+    <button onclick="toggleParagraphColor()">Toggle Paragraph Color</button>
+  </div>
+
+  <!-- Section with paragraph of 3+ sentences -->
+  <h2>About This Page</h2>
+  <p class="intro-text">
+    This is the introduction paragraph. It contains three full sentences.  
+    It is almost winter here in Finland, the days are getting shorter and colder.
+    Summer was a lovely time, everyone was outside enjoying the outdoors and sunbathing.
+  </p>
+
+  <!-- Demonstrating group selectors -->
+  <h3>About my Study life in Finland</h3>
+  <p class="highlight">
+    Sometimes, I create time to study after my work hours but I take short breaks in between because I believe it helps.  
+    Now I have to plan, book train tickets, and pick days when I need to visit the school campus.  
+    I have task deadlines coming up and I need to make sure I start working on them early and avoid excuses.
+  </p>
+
+  <!-- Unordered list with 3+ items -->
+  <section>
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading about geopolitical news</li>
+      <li>Playing video games in my free time</li>
+      <li>Practicing programming skills</li>
+    </ul>
+  </section>
+
+  <!-- Links and media for attribute selectors -->
+  <section>
+    <h2>External Links & Media</h2>
+    <p>
+      Visit <a href="https://net.centria.fi/en/for-students/" target="_blank">Centria Website</a>  
+      to learn more about student resources.  
+    </p>
+    <img src="Img/IMG_book.webp" alt="Open book placed on a desk for study reference">
+  </section>
+
+  <!-- Two divs with different classes -->
+  <div class="box">
+    <h3>Box 1</h3>
+    <p>This is the first box with its own class.</p>
+  </div>
+
+  <div class="highlight">
+    <h3>Box 2</h3>
+    <p>This is the second box with a different class.</p>
+  </div>
+
+</body>
+</html>

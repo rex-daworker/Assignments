@@ -1,0 +1,228 @@
+<!--
+    Author: Rex Odomero Oghenerobo
+    Date: 2025-11-20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoRide Rentals | Ride Smart, Ride Green</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="font-sans text-gray-800 relative">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-20">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-green-600">EcoRide</h1>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-green-600">About</a>
+        <a href="#features" class="hover:text-green-600">Features</a>
+        <a href="#how" class="hover:text-green-600">How It Works</a>
+        <a href="#testimonials" class="hover:text-green-600">Testimonials</a>
+        <a href="#cta" class="hover:text-green-600">Get Started</a>
+      </nav>
+
+      <!-- CTA -->
+      <a href="#cta" class="hidden md:inline-block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+        Rent Now
+      </a>
+
+      <!-- Mobile Bike Menu -->
+      <button id="menu-btn" aria-label="Toggle menu" class="md:hidden focus:outline-none">
+        <img src="https://img.icons8.com/fluency/48/bicycle.png" alt="Bike menu icon" class="w-7 h-7" />
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+      <nav class="flex flex-col items-center py-4 space-y-2 px-4">
+        <a href="#about" class="hover:text-green-600">About</a>
+        <a href="#features" class="hover:text-green-600">Features</a>
+        <a href="#how" class="hover:text-green-600">How It Works</a>
+        <a href="#testimonials" class="hover:text-green-600">Testimonials</a>
+        <a href="#cta" class="hover:text-green-600">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mt-16">
+    <!-- HERO -->
+    <section class="relative bg-gradient-to-br from-green-700 via-blue-700 to-green-800 text-white py-24">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12" data-aos="fade-up">
+        <!-- LEFT TEXT -->
+        <div class="text-center md:text-left max-w-xl">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">Ride Smart, Ride Green</h1>
+          <p class="text-lg md:text-xl mb-8 text-gray-100">
+            Affordable e-bike rentals for city commutes and weekend adventures.
+          </p>
+          <a href="#cta" class="bg-white text-green-700 px-6 py-3 rounded-lg text-lg font-semibold shadow hover:bg-gray-100 transition">
+            Get Started
+          </a>
+        </div>
+        <!-- RIGHT IMAGE -->
+        <div class="mt-12 md:mt-0" data-aos="fade-left" data-aos-delay="300">
+          <img src="https://img.icons8.com/fluency/240/bicycle.png"
+               alt="EcoRide e-bike" class="w-full max-w-sm mx-auto md:ml-10 rounded-3xl shadow-2xl border border-white/10">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-gray-50 text-center px-6">
+      <div class="max-w-4xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-4">About EcoRide</h2>
+        <p class="text-lg text-gray-600 mb-4">
+          EcoRide Rentals provides affordable, eco-friendly e-bikes for city commutes and weekend adventures.
+          Our mission is to make sustainable transport accessible to everyone in Tampere and beyond.
+          With flexible rental plans and modern bikes, we help you ride smarter, greener, and happier.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-20 max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Why Choose Us?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://img.icons8.com/fluency/96/bicycle.png" alt="Modern bikes icon" class="mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-2 text-green-700">Modern Bikes</h3>
+          <p class="text-gray-600">Well-maintained, stylish e-bikes for every journey.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://img.icons8.com/fluency/96/earth-planet.png" alt="Eco-friendly icon" class="mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-2 text-green-700">Eco-Friendly</h3>
+          <p class="text-gray-600">Reduce your carbon footprint while enjoying the ride.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-lg p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://img.icons8.com/fluency/96/money.png" alt="Affordable icon" class="mx-auto mb-4">
+          <h3 class="text-xl font-semibold mb-2 text-green-700">Affordable Plans</h3>
+          <p class="text-gray-600">Flexible rental options that fit your budget.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="py-20 bg-green-50 text-center px-6">
+      <div class="max-w-5xl mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-10">How It Works</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://img.icons8.com/fluency/96/download-from-cloud.png" alt="Book icon" class="mx-auto mb-4">
+            <h3 class="font-semibold text-lg mb-2 text-blue-700">1. Book</h3>
+            <p class="text-gray-600">Reserve your e-bike online in minutes.</p>
+          </div>
+          <div class="p-6" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://img.icons8.com/fluency/96/bicycle.png" alt="Ride icon" class="mx-auto mb-4">
+            <h3 class="font-semibold text-lg mb-2 text-blue-700">2. Ride</h3>
+            <p class="text-gray-600">Pick up your bike and enjoy the journey.</p>
+          </div>
+          <div class="p-6" data-aos="fade-up" data-aos-delay="300">
+            <img src="https://img.icons8.com/fluency/96/combo-chart.png" alt="Return icon" class="mx-auto mb-4">
+            <h3 class="font-semibold text-lg mb-2 text-blue-700">3. Return</h3>
+            <p class="text-gray-600">Drop it off hassle-free when you’re done.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-20 bg-white text-center px-6">
+      <h2 class="text-3xl font-bold mb-10" data-aos="fade-up">What Riders Say</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-gray-50 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="100">
+          <p class="italic mb-4">“EcoRide made my daily commute so much easier. I save time and money.”</p>
+          <span class="font-semibold text-green-700">— Anna K.</span>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="200">
+          <p class="italic mb-4">“The bikes are modern and well maintained. Highly recommend EcoRide Rentals.”</p>
+          <span class="font-semibold text-green-700">— Mikael S.</span>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="300">
+          <p class="italic mb-4">“EcoRide helped me explore Tampere in a fun, eco-friendly way.”</p>
+          <span class="font-semibold text-green-700">— Liisa P.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="py-20 text-center bg-gradient-to-r from-blue-700 to-green-700 text-white" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-4">Ready to Ride?</h2>
+      <p class="text-lg mb-8">Join hundreds of riders choosing smarter, greener transport with EcoRide.</p>
+      <a href="#" class="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+        See Available Rentals
+      </a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4 text-center md:text-left">
+      <div>
+        <h3 class="text-xl font-bold mb-2 text-white">EcoRide</h3>
+        <p>Empowering greener journeys through smarter bike rentals.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2 text-white">Quick Links</h4>
+        <ul class="space-y-1">
+          <li><a href="#about" class="hover:text-green-500">About</a></li>
+          <li><a href="#features" class="hover:text-green-500">Features</a></li>
+          <li><a href="#how" class="hover:text-green-500">How It Works</a></li>
+          <li><a href="#testimonials" class="hover:text-green-500">Testimonials</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2 text-white">Contact</h4>
+        <p>Email: support@ecoride.com</p>
+        <p>Phone: +358 123 456 789</p>
+        <div class="flex justify-center md:justify-start space-x-4 mt-3">
+          <a href="#" aria-label="Facebook"><img src="https://img.icons8.com/fluency/48/facebook.png" alt="Facebook icon"></a>
+          <a href="#" aria-label="Instagram"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram icon"></a>
+          <a href="#" aria-label="Twitter"><img src="https://img.icons8.com/fluency/48/twitterx.png" alt="Twitter icon"></a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-sm mt-10">&copy; 2025 EcoRide. All rights reserved. | <a href="#" class="hover:text-green-400">Privacy Policy</a></p>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button id="backToTop" class="hidden fixed bottom-6 right-6 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition"
+          aria-label="Back to top">
+    ↑
+  </button>
+
+  <!-- SCRIPT: Bike Menu Toggle, Back to Top, and AOS -->
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    // Back to Top button
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.remove("hidden");
+      } else {
+        backToTop.classList.add("hidden");
+      }
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+</body>
+</html>
